@@ -1,0 +1,42 @@
+<%-include('../partials/head')-%>
+<%-include('../partials/reg')-%>
+
+<div class='register-div'>
+    <div class='register-container'>
+        <div class='img-divs'>
+            <img class='center' src='/images/group-1.jpg' height='150'>
+        </div>
+        <div>
+            <span><center><%- include('../../views/messages') -%></center></span>
+            <h3 class='text-center my-3 py-3'>Welcome to WAAW CHAT</h3>
+            <form class='form-1' action='/auth/register' method='POST'>
+                        <p>REGISTER TO GET STARTED</p>
+                        <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username:</label>
+                        <input type="text" class="col-form-control user-input" id="exampleInputEmail1" aria-describedby="emailHelp" name='username' placeholder='Adams Pauls'>
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+                        <input type="email" class="col-form-control email-input" id="exampleInputEmail1 " aria-describedby="emailHelp" name='email' placeholder='Adam@mail.com'>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password:</label>
+                        <input type="password" class="col-form-control password-input" id="exampleInputPassword1" name='password' placeholder='****'>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password:</label>
+                        <input type="password" class="col-form-control password-input" id="exampleInputPassword1" name='confirmPassword' placeholder='****'>
+                    </div>
+                    <button type="submit" class="btn  btnn-reg text-white">Register</button>
+                    <div>
+                        <p class='py-1'>Already have an Account? <a href="/auth/login">Log In</a></p>
+                    </div>
+            </form>
+        </div>        
+    </div>
+</div>
+
+</div>
+<%-include('../partials/foot')-%>
+</div>
+    

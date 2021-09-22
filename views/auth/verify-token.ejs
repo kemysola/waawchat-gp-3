@@ -1,0 +1,43 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/header') -%>
+ 
+ 
+ <!-- Main Body Start -->
+<!-- <main class="mainBody displayFlex">
+    <div class="container-form">
+        <div class="heading">
+            <h1>Welcome to WAAWTube. </h1>
+            <h3>Please verify your account</h3>
+        </div>
+        <form action="/auth/login" method="post">
+            <%- include('../../views/messages') -%>
+            <br>
+
+            <a type="button" href="/auth/login" class="btn btn-primary">Verify Account</a>
+
+
+            <input type="submit" value="Verify Account">
+        </form>
+    </div>
+</main> -->
+<!-- Main Body End  -->
+
+
+<div class="login-container">
+    <div class="login-content">
+        <h3>Verify Account</h3>
+        <%- include('../messages') -%>
+        <form action="" method="POST">
+            <div class="inputBox">
+                <label for="">Enter Token</label>
+                <input type="text" name="value" id="name"  required>
+            </div>
+            
+                <button class="button" type="submit">SUBMIT</button>
+        
+        </form>
+    </div>
+</div>
+
+
+<%- include('../partials/foot') -%> 
